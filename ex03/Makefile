@@ -1,5 +1,6 @@
-NAME = Animal
-SRCS = main.cpp AMateria.cpp 
+NAME = a.out
+SRCS = srcs/main.cpp srcs/AMateria.cpp srcs/Character.cpp srcs/Cure.cpp srcs/Ice.cpp \
+srcs/Icharacter.cpp srcs/MateriaSource.cpp
 FLAGS = -Wall -Werror -Wextra -std=c++98
 
 

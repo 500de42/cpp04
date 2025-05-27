@@ -4,22 +4,24 @@
 #include <iostream>
 #include "AMateria.hpp"
 #include "Icharacter.hpp"
-#include "IMateria.hpp"
 
 class Character : public ICharacter
 {
     private:
-        IMateria inventaire[4];
+        AMateria *inventaire[4];
+        AMateria *drop[999];
+        int idxDrop;
+        std::string Name;
     public:
-        Character(const Character &copy);
         Character();
-        virtual ~Character();
+        Character(std::string Name);
         Character &operator=(const Character &src);
-        virtual ~Character() {};
-        virtual std::string const & getName() const = 0;
-        virtual void equip(AMateria* m) = 0;
-        virtual void unequip(int idx) = 0;
-        virtual void use(int idx, Character& target) = 0;
+        Character(const Character &copy);
+        virtual ~Character();
+        virtual std::string const & getName() const;
+        virtual void equip(AMateria* m);
+        virtual void unequip(int idx);
+        virtual void use(int idx, ICharacter& target);
 };
 
 #endif
