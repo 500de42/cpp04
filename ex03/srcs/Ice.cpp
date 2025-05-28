@@ -17,7 +17,7 @@ Ice::Ice(const Ice &copy)
 
 Ice::~Ice()
 {
-    delete this;
+
 }
 
 std::string const &Ice::getType() const

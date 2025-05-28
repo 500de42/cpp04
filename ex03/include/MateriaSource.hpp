@@ -13,7 +13,7 @@ class MateriaSource : public IMateriaSource
         int idxTab;
     public:
         MateriaSource();
-        virtual ~MateriaSource() {};
+        virtual ~MateriaSource();
         MateriaSource &operator=(const MateriaSource &src);
         MateriaSource(const MateriaSource &copy);
         virtual void learnMateria(AMateria*);

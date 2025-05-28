@@ -25,3 +25,22 @@ int main()
     delete src;
     return 0;
 }
+
+
+
+// int main ()
+// {
+//     IMateriaSource* src = new MateriaSource();
+
+//     src->learnMateria(new Ice());
+//     src->learnMateria(new Cure());
+//     ICharacter *nene = new Character("nene");
+//     ICharacter *tt = new Character("ii");
+//     AMateria *tmp = src->createMateria("ice");
+//     nene->equip(tmp);
+//     nene->unequip(0);
+//     nene->use(0, *tt);
+//     delete nene;
+//     delete src;
+//     delete tt;
+// }

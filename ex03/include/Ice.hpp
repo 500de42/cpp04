@@ -10,7 +10,7 @@ class Ice : public AMateria
         virtual AMateria* clone() const;
         Ice(std::string const & type);
         Ice();
-        ~Ice();
+        virtual ~Ice();
         Ice(const Ice &copy);
         Ice &operator=(const Ice &src);
         virtual std::string const &getType() const;

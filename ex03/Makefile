@@ -1,7 +1,7 @@
 NAME = a.out
 SRCS = srcs/main.cpp srcs/AMateria.cpp srcs/Character.cpp srcs/Cure.cpp srcs/Ice.cpp \
 srcs/Icharacter.cpp srcs/MateriaSource.cpp
-FLAGS = -Wall -Werror -Wextra -std=c++98
+FLAGS = -Wall -Werror -Wextra -std=c++98 -g3
 
 
 all : $(NAME)

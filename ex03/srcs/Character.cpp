@@ -103,6 +103,11 @@ void Character::equip(AMateria *m)
 
 void Character::unequip(int idx)
 {
+    if (idx > 4 || idx < 0)
+    {
+        std::cout << "Index non valide" << std::endl;
+        return ;
+    }
     if (this->inventaire[idx] != 0)
     {
         this->drop[idxDrop] = this->inventaire[idx];
@@ -113,6 +118,11 @@ void Character::unequip(int idx)
 
 void Character::use(int idx, ICharacter& target)
 {
+    if (this->inventaire[idx] == 0)
+    {
+        std::cout << "Mauvais index ou aucun Materia equiper" << std::endl;
+        return ;
+    }
     this->inventaire[idx]->use(target);
 }
 
