@@ -11,7 +11,7 @@ class Animal
         Animal();
         Animal(std::string type);
         virtual void makeSound() const;
-        ~Animal();
+        virtual ~Animal();
         Animal &operator=(const Animal &src);
         Animal(const Animal &copy);
         std::string getType() const;
@@ -22,7 +22,7 @@ class Dog : public Animal
     public:
         Dog();
         Dog(std::string type);
-        ~Dog();
+        virtual ~Dog();
         Dog &operator=(const Dog &src);
         Dog(const Dog &copy);
         void makeSound() const;
@@ -33,7 +33,7 @@ class Cat : public Animal
     public:
         Cat();
         Cat(std::string type);
-        ~Cat();
+        virtual ~Cat();
         Cat &operator=(const Cat &src);
         Cat(const Cat &copy);
         void makeSound() const;
@@ -45,7 +45,7 @@ class WrongAnimal
         std::string type;
     public:
         WrongAnimal();
-        ~WrongAnimal();
+        virtual ~WrongAnimal();
         WrongAnimal &operator=(const WrongAnimal &src);
         WrongAnimal(const WrongAnimal &copy);
         virtual void makeSound() const;
@@ -56,10 +56,9 @@ class WrongCat : public WrongAnimal
 {
     public:
         WrongCat();
-        ~WrongCat();
+        virtual ~WrongCat();
         WrongCat &operator=(const WrongCat &src);
         WrongCat(const WrongCat &copy);
-        void makeSound() const;
 };
 
 

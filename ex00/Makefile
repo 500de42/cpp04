@@ -1,6 +1,6 @@
 NAME = Animal
 SRCS = main.cpp Animal.cpp Cat.cpp Dog.cpp
-FLAGS = -Wall -Werror -Wextra -std=c++98
+FLAGS = -Wall -Werror -Wextra -std=c++98 -g 
 
 
 all : $(NAME)

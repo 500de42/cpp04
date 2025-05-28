@@ -14,7 +14,7 @@ class Animal
         virtual ~Animal();
         Animal &operator=(const Animal &src);
         Animal(const Animal &copy);
-        std::string getType() const;
+        virtual std::string getType() const = 0;
 };
 
 

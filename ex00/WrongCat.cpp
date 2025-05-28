@@ -2,27 +2,27 @@
 
 WrongCat::WrongCat()
 {
-    std::cout << "default constructor called" << std::endl;
+    std::cout << "WrongCat default constructor called" << std::endl;
 }
 
 WrongCat::~WrongCat()
 {
-    std::cout << "destructor called" << std::endl;
+    std::cout << "WrongCat destructor called" << std::endl;
 }
 
 WrongCat::WrongCat(const WrongCat &copy)
 {
-    std::cout << "copy constructor called" << std::endl;
+    std::cout << "WrongCat copy constructor called" << std::endl;
     this->type = copy.type;
 }
-void WrongCat::makeSound() const
-{
-    std::cout << "WrongCat" << std::endl;
-}
+// void WrongCat::makeSound() const
+// {
+//     std::cout << "WrongCat" << std::endl;
+// }
 
 WrongCat& WrongCat::operator=(const WrongCat &src)
 {
-    std::cout << "copy assigment constructor called" << std::endl;
+    std::cout << "WrongCat copy assigment constructor called" << std::endl;
     this->type = src.type;
     return *this;
 }

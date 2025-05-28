@@ -4,7 +4,6 @@
 #include "WrongCat.hpp"
 #include "Cat.hpp"
 #include "Dog.hpp"
-#include "AAnimal.hpp"
 
 // int main()
 // {
@@ -35,10 +34,3 @@ int main()
         delete tab[i];
     }
 }
-
-// int main()
-// {
-//     AAnimal *K;
-
-//     K = new AAnimal;
-// }
